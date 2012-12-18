@@ -116,7 +116,7 @@ cucumber ${WORKSPACE}/infrastructure/target/features/production.feature host=${H
 # AMI the instance
 ruby ${WORKSPACE}/lib/create_ami.rb --sdbdomain ${SIMPLEDB_STACK} \
                                     --autoscalingGroup ${AutoScalingGroup} \
-                                    --imagename AMI-${BUILD_NUMBER}</command>
+                                    --imagename AMI-${BUILD_NUMBER}-MAIN</command>
     </hudson.tasks.Shell>
   </builders>
   <publishers/>
